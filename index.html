@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Temannn 🎂💙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#73a9ff,#8dc0ff,#6f9eff);
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+    padding:30px;
+}
+
+/* FLOATING */
+.float{
+    position:absolute;
+    font-size:30px;
+    animation:float 10s linear infinite;
+    opacity:0.8;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh) rotate(0deg);
+    }
+    100%{
+        transform:translateY(-120px) rotate(360deg);
+    }
+}
+
+/* DOODLE */
+.doodle{
+    position:absolute;
+    color:white;
+    opacity:0.6;
+    font-size:40px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+/* TITLE */
+.title{
+    text-align:center;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.title h1{
+    font-family:'Baloo 2',cursive;
+    font-size:80px;
+    color:white;
+    text-shadow:5px 5px 0 rgba(0,0,0,0.08);
+    line-height:1.1;
+}
+
+.title span{
+    color:#ffe082;
+}
+
+.title p{
+    color:white;
+    margin-top:10px;
+    font-size:20px;
+}
+
+/* NOTES */
+.note-box{
+    position:absolute;
+    background:#fff7d6;
+    padding:18px;
+    border-radius:20px;
+    width:180px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transform:rotate(-5deg);
+    font-size:15px;
+    line-height:1.6;
+}
+
+.note1{
+    left:20px;
+    top:120px;
+}
+
+.note2{
+    right:20px;
+    top:120px;
+    transform:rotate(5deg);
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.card{
+    background:#fefefe;
+    border-radius:35px;
+    padding:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    position:relative;
+    transition:0.4s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px) rotate(1deg);
+}
+
+.card::before{
+    content:'';
+    position:absolute;
+    top:-30px;
+    right:-30px;
+    width:100px;
+    height:100px;
+    background:rgba(255,255,255,0.4);
+    border-radius:50%;
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:25px;
+}
+
+/* TAG */
+.tag{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:#5c8dff;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* MESSAGE */
+.message{
+    padding:20px 10px;
+    text-align:center;
+}
+
+.message h2{
+    font-family:'Baloo 2',cursive;
+    color:#4f7fff;
+    font-size:45px;
+}
+
+.message p{
+    color:#555;
+    line-height:1.8;
+    margin-top:10px;
+    font-size:16px;
+}
+
+/* BIG NOTE */
+.big-note{
+    background:white;
+    margin-top:60px;
+    padding:45px;
+    border-radius:40px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.big-note::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:18px;
+    background:repeating-linear-gradient(
+        90deg,
+        #ffffff,
+        #ffffff 20px,
+        #d9e7ff 20px,
+        #d9e7ff 40px
+    );
+    border-radius:40px 40px 0 0;
+}
+
+.big-note h2{
+    font-family:'Baloo 2',cursive;
+    font-size:55px;
+    color:#4f7fff;
+}
+
+.big-note p{
+    margin-top:20px;
+    color:#555;
+    font-size:18px;
+    line-height:2;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#5c8dff;
+    color:white;
+    padding:16px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    background:#3e73ff;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:white;
+    font-size:16px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.title h1{
+    font-size:50px;
+}
+
+.note-box{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- FLOATING -->
+<div class="float" style="left:5%; animation-delay:0s;">✨</div>
+<div class="float" style="left:15%; animation-delay:2s;">🎂</div>
+<div class="float" style="left:30%; animation-delay:4s;">💙</div>
+<div class="float" style="left:45%; animation-delay:1s;">🌈</div>
+<div class="float" style="left:60%; animation-delay:3s;">🧸</div>
+<div class="float" style="left:75%; animation-delay:5s;">⭐</div>
+<div class="float" style="left:90%; animation-delay:6s;">🎉</div>
+
+<!-- DOODLE -->
+<div class="doodle" style="top:80px; left:80px;">☁️</div>
+<div class="doodle" style="top:200px; right:100px;">💫</div>
+<div class="doodle" style="bottom:200px; left:100px;">🤍</div>
+
+<div class="container">
+
+    <!-- TITLE -->
+    <div class="title">
+
+        <h1>
+            Happy Birthday <br>
+            <span>Divaaaa!</span> 🎂💙
+        </h1>
+
+        <p>
+            Semoga harimu secerah senyummu ✨
+        </p>
+
+    </div>
+
+    <!-- STICKY NOTES -->
+    <div class="note-box note1">
+        🎉 Semoga makin sukses dan makin bahagiaa yaaa 😎
+    </div>
+
+    <div class="note-box note2">
+        🎂 Hari ini bebas makan banyak tanpa rasa bersalah 😭
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+
+        <!-- FOTO 1 -->
+        <div class="card">
+
+            <div class="tag">Photo 1 📸</div>
+
+            <img src="foto1.jpg">
+
+            <div class="message">
+                <h2>Cool Girl 😎</h2>
+
+                <p>
+                    Selalu jadi manusia paling random tapi seru 😭✨
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="card">
+
+            <div class="tag">Photo 2 💙</div>
+
+            <img src="foto2.jpg">
+
+            <div class="message">
+                <h2>Birthday Mode 🎂</h2>
+
+                <p>
+                    Hari spesial buat orang spesial 😎✨
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="card">
+
+            <div class="tag">Photo 3 ⭐</div>
+
+            <img src="foto3.jpg">
+
+            <div class="message">
+                <h2>Teman Baik 🧸</h2>
+
+                <p>
+                    Semoga tetap jadi teman terbaik selamanya 💙
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FOTO 4 -->
+        <div class="card">
+
+            <div class="tag">Photo 4 🌈</div>
+
+            <img src="foto4.jpg">
+
+            <div class="message">
+                <h2>Stay Happy ✨</h2>
+
+                <p>
+                    Semoga hidupmu penuh kebahagiaan & rezeki 🎉
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FOTO 5 -->
+        <div class="card">
+
+            <div class="tag">Photo 5 🍀</div>
+
+            <img src="foto5.jpg">
+
+            <div class="message">
+                <h2>Good Luck 🚀</h2>
+
+                <p>
+                    Semoga semua impianmu tercapai tahun ini 💫
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BIG NOTE -->
+    <div class="big-note">
+
+        <h2>Birthday Wishes For You 💌</h2>
+
+        <p>
+            Selamat ulang tahun temannn 🎂✨ <br><br>
+
+            Semoga panjang umur, sehat selalu,
+            makin sukses, dilancarkan semua urusannya,
+            dan jadi orang hebat ke depannya 🌈<br><br>
+
+            Terima kasih udah jadi teman yang selalu seru diajak deeptalk hahahhaahahahaah 😭💙
+        </p>
+
+        <a href="#" class="btn">
+            Temannn Forever 😎
+        </a>
+
+    </div>
+
+    <footer>
+        made with friendship & kebanyakan candaa 💙
+    </footer>
+
+</div>
+
+</body>
+</html>
